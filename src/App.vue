@@ -2,11 +2,11 @@
   <div id="app">
     <Header></Header>
     <div class="container">
-      <div class="row">
-        <div class="col-8">
+      <div class="row main-wrapper">
+        <div class="col-md-12 col-lg-8">
           <ProductList></ProductList>
         </div>
-        <div class="col-4">
+        <div class="col-md-12 col-lg-4 mb-5 cart-block">
           <Cart></Cart>
         </div>
       </div>
@@ -33,5 +33,14 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
+}
+
+@media (max-width: 992px) {
+  .main-wrapper {
+    flex-direction: column-reverse;
+  }
+  /* .cart-block {
+    flex: 1 1 100%;
+  } */
 }
 </style>

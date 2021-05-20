@@ -5,7 +5,7 @@
       <div class="card-body">
         <h6 class="card-title">{{ product.title }}</h6>
         <p class="card-text">$ {{ product.price }}</p>
-        <a @click="addToCart(product)" href="#" class="btn btn-primary">Go somewhere</a>
+        <a @click.prevent="addToCart(product)" href="#" class="btn btn-primary">Add to Cart</a>
       </div>
     </div>
   </div>
@@ -30,6 +30,7 @@ export default {
     border: none;
     min-height: 305px;
     margin-bottom: 30px;
+    flex: 1 1 200px;
   }
   .card-body {
     display: flex;

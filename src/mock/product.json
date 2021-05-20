@@ -22,5 +22,29 @@
     "title": "Apple 13",
     "price": 480,
     "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/71vFKBpKakL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Asus 13",
+    "price": 1480,
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/81oVSSITRQL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Apple 133 xd",
+    "price": 2480,
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/71vFKBpKakL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Dell XPS 13 9380.",
+    "price": 1080,
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/81UtZBSGhwL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Asus XP 1564",
+    "price": 1280,
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/81oVSSITRQL._AC_SL1500_.jpg"
   }
 ]

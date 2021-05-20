@@ -16,7 +16,7 @@
           <div class="media-body">
             <h5 class="mt-0">{{ item.title }}</h5>
             <button @click="reduceQty(item.id)" class="btn btn-qty btn-sm btn-secondary">-</button>
-            x {{ item.qty }}
+            <span class="cart-qty">x {{ item.qty }}</span>
             <button @click="addQty(item.id)" class="btn btn-qty btn-sm btn-secondary">+</button>
           </div>
         </div>
@@ -79,5 +79,9 @@ export default {
   }
   .btn-checkout {
     margin-top: 20px;
+  }
+  .cart-qty {
+    display: inline-block;
+    width: 48px;
   }
 </style>
