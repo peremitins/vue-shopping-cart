@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Dell XPS 13 9380",
+    "price": 1080,
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/81UtZBSGhwL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Asus XP 1564",
+    "price": 1280,
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/81oVSSITRQL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 3,
+    "title": "MSI XPS 13 9380",
+    "price": 980,
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/41zTISc2P7L._AC_.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Apple 13",
+    "price": 480,
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/71vFKBpKakL._AC_SL1500_.jpg"
+  }
+]
