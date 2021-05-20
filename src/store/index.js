@@ -28,6 +28,9 @@ export default new Vuex.Store({
     },
     removeItem({ commit }, id) {
       commit('removeItem', id);
+    },
+    emptyCart({ commit }) {
+      commit('emptyCart');
     }
   },
   mutations: {
@@ -57,5 +60,8 @@ export default new Vuex.Store({
     removeItem(state, id) {
       state.cart = state.cart.filter(item => item.id !== id);
     },
+    emptyCart(state) {
+      state.cart = [];
+    }
   }
 })
