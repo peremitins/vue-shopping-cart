@@ -5,7 +5,7 @@
       <div class="card-body">
         <h6 class="card-title">{{ product.title }}</h6>
         <p class="card-text">$ {{ product.price }}</p>
-        <a @click.prevent="addToCart(product)" href="#" class="btn btn-primary">Add to Cart</a>
+        <a @click.prevent="addToCart(product), saveCart(product.id)" href="#" class="btn btn-primary">Add to Cart</a>
       </div>
     </div>
   </div>
@@ -18,7 +18,7 @@ export default {
     ...mapGetters(["products"])
   },
   methods: {
-    ...mapActions(["getProducts", "addToCart"])
+    ...mapActions(["getProducts", "addToCart", "saveCart"])
   },
   mounted() {
     this.getProducts();

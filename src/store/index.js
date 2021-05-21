@@ -7,7 +7,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state:{
     products: [],
-    cart: []
+    cart: JSON.parse(localStorage.getItem('storageCart')) || []
   },
   getters: {
     products: state => state.products,
@@ -31,6 +31,9 @@ export default new Vuex.Store({
     },
     emptyCart({ commit }) {
       commit('emptyCart');
+    },
+    saveCart({ commit }) {
+      commit('saveCart');
     }
   },
   mutations: {
@@ -62,6 +65,9 @@ export default new Vuex.Store({
     },
     emptyCart(state) {
       state.cart = [];
+    },
+    saveCart(state) {
+      localStorage.setItem('storageCart', JSON.stringify(state.cart));
     }
   }
 })

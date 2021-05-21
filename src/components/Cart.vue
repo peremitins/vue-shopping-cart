@@ -8,16 +8,16 @@
     </div>
     <ul class="list-group">
       <li class="list-group-item" v-for="item in cart" :key="item.id">
-        <button @click="removeItem(item.id)" type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button @click="removeItem(item.id), saveCart(item.id)" type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
         <div class="media">
           <img :src="item.imgUrl" class="mr-3" width="80px" alt="item.title">
           <div class="media-body">
             <h5 class="mt-0">{{ item.title }}</h5>
-            <button @click="reduceQty(item.id)" class="btn btn-qty btn-sm btn-secondary">-</button>
+            <button @click="reduceQty(item.id), saveCart(item.id)" class="btn btn-qty btn-sm btn-secondary">-</button>
             <span class="cart-qty">x {{ item.qty }}</span>
-            <button @click="addQty(item.id)" class="btn btn-qty btn-sm btn-secondary">+</button>
+            <button @click="addQty(item.id), saveCart(item.id)" class="btn btn-qty btn-sm btn-secondary">+</button>
           </div>
         </div>
       </li>
@@ -53,7 +53,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(["addQty", "reduceQty", "removeItem", "emptyCart"]),
+    ...mapActions(["addQty", "reduceQty", "removeItem", "emptyCart", "saveCart"]),
     placeOrder() {
       this.isProcessing = true;
       setTimeout(() => {
